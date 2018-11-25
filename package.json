@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "fix": "prettier --config ./.prettierrc.js --write \"./**/*.js\" "
   },
   "dependencies": {
     "chai": "^4.2.0",
@@ -20,7 +21,9 @@
     "moment": "^2.22.2",
     "node-osc": "^2.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/szk2s/spectrum2mpe.git"
